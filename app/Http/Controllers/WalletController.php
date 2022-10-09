@@ -13,9 +13,6 @@ class WalletController extends Controller
     {
         $allWallets = WalletsToQuery::with('blockchains')->get();
         return $allWallets;
-
-
-
     }
 
     public function getWalletTokens ($walletId)
