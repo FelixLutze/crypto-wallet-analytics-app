@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('api_get_token_list');
             $table->string('tokens_to_ignore')->nullable();
+            $table->enum('error', ['true', 'false'])->default('false');
             $table->timestamps();
         });
     }
