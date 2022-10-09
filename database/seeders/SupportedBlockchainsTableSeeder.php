@@ -22,7 +22,7 @@ class SupportedBlockchainsTableSeeder extends Seeder
                 "api_get_token_list" => "https://explorer.celo.org/api?module=account&action=tokenlist&address=",
                 "created_at" => $now,
                 "updated_at" => $now
-        ]
+            ]
         ]);
     }
 }
